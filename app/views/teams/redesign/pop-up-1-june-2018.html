@@ -1,0 +1,96 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Blank transactional template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/version-1",
+      text: "Home"
+    },
+    {
+      href: "/teams",
+      text: "Teams"
+    },
+    {
+      href: "/teams/redesign",
+      text: "NHS.UK Redesign team"
+    }
+  ],
+  href: "/teams/redesign/warning-callout",
+  text: "How might we highlight important text on a page of information?"
+}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Add your content here -->
+{{ backLink({
+  "href": "/teams/redesign/warning-callout",
+  "text": "Go back to the question"
+}) }}
+      
+
+      <h1>
+ <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          NHS.UK Redesign
+        </span>
+        Popup, Leeds library - 1 June 2018
+      </h1>
+
+
+        <p class="nhsuk-body-s">
+    Date conducted: 1 June 2018<br>
+    Testing carried out by: Emma Holmes
+  </p>
+
+      <h2>Questions asked</h2>
+             <ol>  
+      <li>Do users notice the warning call out in relation to other content on the page?</li>
+      <li>Are they seeing it with its intended prominence related to other content on page?</li>
+      <li>Do they understand what it means?</li>
+      </ol>
+
+      <h2>Method</h2>
+        <p>Popup testing in the entrance of Leeds library. </p>
+        <p>We tested the first iteration of a 'warning callout' on a medicines page prototype on an iPhone 6</p>
+        <p>We set the user a task to find a specific information on the page then asked specific questions regarding the 'warning callout'</p>
+        <p><a href="#">Discussion guide (word document)</a></p>
+        <p><a href="#">Version 1 prototype</a></p>
+
+      <h2>Findings</h2>
+        <p>We spoke to 33 users in total.</p>
+        <ul>
+        <li>Users didn’t understand it as a warning</li>
+        <li>Some users didn’t see it as part of the page</li>
+        </ul>
+        <p>Version 1 of the warning callout didn't answer the question.</p>
+        <p><a href="#">Read the full report (PDF)</a></p>
+
+      <h2>Next steps</h2>    
+      <p>Iterate the design based on the following hypthesis:</p>
+        <p>If we make the yellow brighter and increase the font weight<br>
+Then users will take more notice and read it<br>
+Because it looks more like a warning</p>
+<p>Then test again</p>
+
+ {{ panel({
+  "HTML": "<h3>Key contacts</h3>
+  <p>Leigh Mortimer (Product Lead)<br> <a href='mailto:leigh.mortimer@nhs.net'>leigh.mortimer@nhs.net</a></p>
+  <p>Ashley Wheat (User Researcher)<br> <a href='mailto:ashley.wheat@nhs.net'>ashley.wheat@nhs.net</a></p>"
+}) }}
+
+
+       
+
+
+    </div>  
+
+  </div>
+{% endblock %}

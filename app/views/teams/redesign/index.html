@@ -1,0 +1,69 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Blank transactional template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/version-1",
+      text: "Home"
+    }
+  ],
+  href: "/teams",
+  text: "Teams"
+}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Add your content here -->
+
+      <h1>
+        NHS.UK Redesign team
+      </h1>
+
+
+<p class="nhsuk-body-l">NHS.UK redesign team work on redesigning the NHS website.</p>
+
+{{ panel({
+  "HTML": "<h3>Key contacts</h3>
+  <p>Leigh Mortimer (Product Lead)<br> <a href='mailto:leigh.mortimer@nhs.net'>leigh.mortimer@nhs.net</a></p>
+  <p>Ashley Wheat (User Researcher)<br> <a href='mailto:ashley.wheat@nhs.net'>ashley.wheat@nhs.net</a></p>"
+}) }}
+
+
+      <h2>Questions we're researching</h2>
+
+        <h3><a href="/teams/redesign/warning-callout">How might we highlight important text on a page of information?</a></h3>
+      <p class="nhsuk-body-s">
+      <strong>Last updated</strong> 4 May 2019</p>
+<hr />
+
+        <h3><a href="#">How might we signpost a user to the next stage of their journey? </a></h3>
+      <p class="nhsuk-body-s">
+      <strong>Last updated</strong> 20 April 2019</p>
+<hr />
+
+        <h3><a href="#">How might we help users understand where they are in the website?</a></h3>
+      <p class="nhsuk-body-s">
+      <strong>Last updated</strong> 1 April 2019</p>
+<hr />
+
+        <h3><a href="#">How might we help users carry out an action on a page like starting an application or saving their progress?</a></h3>
+      <p class="nhsuk-body-s">
+      <strong>Last updated</strong> 20 December 2018</p>
+<hr />
+
+
+
+
+    </div>  
+
+  </div>
+{% endblock %}
